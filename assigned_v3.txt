@@ -102,8 +102,8 @@ A: No
 	Q(10.2):GOTO:not
 
 Q(indigent):you likely qualify for appointment of counsel
-	DOC(11):Based on the information you provided, <x>indigent<x/>.<br><br>
+	DOC(11):Based on the information you provided, <x>indigent<x/>.<br><br>Sincerely, <br><br>Michigan Indigency Calculator
 Q(prove):you must prove that you are indigent in order to be eligible for appointment of counsel
-	DOC(12):Based on the information you provided, <x>prove<x/>.<br><br>
+	DOC(12):Based on the information you provided, <x>prove<x/>.<br><br>Sincerely, <br><br>Michigan Indigency Calculator
 Q(not):you are likely ineligible for appointed counsel
-	DOC(13):Based on the information you provided, <x>not<x/>.<br><br>
+	DOC(13):Based on the information you provided, <x>not<x/>.<br><br>Sincerely, <br><br>Michigan Indigency Calculator
