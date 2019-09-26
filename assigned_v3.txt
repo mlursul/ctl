@@ -1,3 +1,6 @@
+Before: <input type="hidden" name="name" value="Michigan Indigency Calculator"/>
+<input type="hidden" name="docx_uri" value="https://mlursul.github.io/ctl/MI_IndigencyDoc.docx"/>
+
 Title: Michigan Indigency Calculator
 Author: Mallory L. Ursul
 Before:<link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
@@ -100,5 +103,6 @@ A: No
 	Q(10.2):GOTO:not
 
 Q(indigent):you likely qualify for appointment of counsel
+A[javascript:submit2('http://mlursul.gihub.io/ctl/MI_IndigencyDoc.docx','POST','','','','json_doc','_blank')]:Yes
 Q(prove):you must prove that you are indigent in order to be eligible for appointment of counsel
 Q(not):you are likely ineligible for appointed counsel
