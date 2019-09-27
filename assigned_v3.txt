@@ -103,6 +103,8 @@ A: No
 	Q(10.2):GOTO:not
 
 Q(indigent):you likely qualify for appointment of counsel
-A[javascript:submit2('http://mlursul.gihub.io/ctl/MI_IndigencyDoc.docx','POST','','','','json_doc','_blank')]:Yes
+A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
 Q(prove):you must prove that you are indigent in order to be eligible for appointment of counsel
+A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
 Q(not):you are likely ineligible for appointed counsel
+A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
