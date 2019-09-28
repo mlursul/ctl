@@ -1,5 +1,4 @@
-Before:<input type="hidden" name="name" value="MI"/>
-<input type="hidden" name="docx_uri" value="http://mlursul.github.io/ctl/ctl_mi.docx"/>
+Before:<input type="hidden" name="docx_uri" value="http://mlursul.github.io/ctl/ctl_mi.docx"/>
 
 Title: Michigan Indigency Calculator
 Author: Mallory L. Ursul
@@ -119,7 +118,6 @@ A: No
 	Q(13.2):GOTO:bye
 
 Q(end):Alright, are you ready to see your letter?
-A[javascript:submit2('https://colarusso.pythonanywhere.com/2docx/', 'POST', '', '', '', 'json_doc', '_blank')]: Yes (docx).
-A[javascript:submit2('https://colarusso.pythonanywhere.com/2pdf/', 'POST', '', '', '', 'json_doc', '_blank')]: Yes (pdf).
+A[javascript:submit2('https://colarusso.pythonanywhere.com/2docx/', 'POST', '', '', '', 'json_doc', '_blank')]: Yes 
 
 Q(bye):Thank you
