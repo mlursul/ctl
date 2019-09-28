@@ -1,5 +1,5 @@
-Before: <input type="hidden" name="name" value="Michigan Indigency Calculator"/>
-<input type="hidden" name="docx_uri" value="https://mlursul.github.io/ctl/MI_IndigencyDoc.docx"/>
+Before:<input type="hidden" name="name" value="MI"/>
+<input type="hidden" name="docx_uri" value="http://mlursul.github.io/ctl/ctl_mi.docx"/>
 
 Title: Michigan Indigency Calculator
 Author: Mallory L. Ursul
@@ -102,9 +102,24 @@ A: Yes
 A: No
 	Q(10.2):GOTO:not
 
-Q(indigent):you likely qualify for appointment of counsel
-A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
-Q(prove):you must prove that you are indigent in order to be eligible for appointment of counsel
-A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
-Q(not):you are likely ineligible for appointed counsel
-A[javascript:submit2('https://mlursul.github.io/ctl/MI_IndingencyDoc.docx', 'POST', '', '', '', 'json_doc', '_blank')]:Print
+Q(indigent):You likely qualify for appointment of counsel. Want to see this in writing?
+A: Yes
+	Q(11.1):GOTO:end
+A: No
+	Q(11.2):GOTO:bye
+Q(prove):You must prove that you are indigent in order to be eligible for appointment of counsel. Want to see this in writing?
+A: Yes
+	Q(12.1):GOTO:end
+A: No
+	Q(12.2):GOTO:bye
+Q(not):You are likely ineligible for appointed counsel. Want to see this in writing?
+A: Yes
+	Q(13.1):GOTO:end
+A: No
+	Q(13.2):GOTO:bye
+
+Q(end):Alright, are you ready to see your letter?
+A[javascript:submit2('https://colarusso.pythonanywhere.com/2docx/', 'POST', '', '', '', 'json_doc', '_blank')]: Yes (docx).
+A[javascript:submit2('https://colarusso.pythonanywhere.com/2pdf/', 'POST', '', '', '', 'json_doc', '_blank')]: Yes (pdf).
+
+Q(bye):Thank you
